@@ -55,23 +55,26 @@
 <br />
 
 
-# 🔑 핵심기능
+# 🔑  구현내용
 
-### 1. 로그인 / 회원 가입 / 회원 수정 / 회원 탈퇴
- 
-> [코드 보러가기](https://github.com/nbcamp-AI-2-fantastic4/mylittlebeer/blob/255cda0b67fd3f3df6e6f222e926d4d24931adb1/user/views.py#L13)
+### 1. 데이터 전처리
+> 데이터셋의 문자열타입의 리스트를 리스트 타입으로 파싱  
+> [코드보러가기](https://github.com/kimphysicsman/mylittlebeer/blob/master/recommend/functions.py#L6)  
+> <img width="500" src="https://user-images.githubusercontent.com/68724828/187816783-bbe21a31-9c1f-4cba-8691-cc2a84f680fb.png" /><br />
 
-### 2. 사용자가 선호하는 맥주 특징을 고르면 그것과 비슷한 유형의 맥주를 추천 (저장 가능)
+<br />
 
-> [코드 보러가기](https://github.com/nbcamp-AI-2-fantastic4/mylittlebeer/blob/255cda0b67fd3f3df6e6f222e926d4d24931adb1/recommend/views.py#L19)
+### 2. 자카드 유사도 구현
+> 맥주의 특징에 대한 유사도를 측정하기위한 자카드 유사도 알고리즘  
+> [코드보러가기](https://github.com/kimphysicsman/mylittlebeer/blob/master/recommend/functions.py#L19)
 
-### 3. 맥주 정보를 볼 수 있는 리스팅 페이지 (조건을 걸어서 종류 별로 리스팅 할 수 있게)
+<br />
 
-> [코드 보러가기](https://github.com/nbcamp-AI-2-fantastic4/mylittlebeer/blob/255cda0b67fd3f3df6e6f222e926d4d24931adb1/beer/views.py#L5)
+### 3. 자카드 유사도를 이용한 맥주 추천 기능 구현
+> 사용자가 입력한 맥주의 특징들을 받아 DB의 맥주 데이터들과 유사도를 측정하고 가장 유사도가 높은 맥주를 return하는 함수  
+> [코드보러가기](https://github.com/kimphysicsman/mylittlebeer/blob/master/recommend/functions.py#L28)
 
-### 4. 저장된 추천 받은 검색 기록 리스팅 / 삭제 페이지 
- 
-> [코드 보러가기](https://github.com/nbcamp-AI-2-fantastic4/mylittlebeer/blob/255cda0b67fd3f3df6e6f222e926d4d24931adb1/history/views.py#L8)
+
 
 <br />
 
